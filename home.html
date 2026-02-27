@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/111111.jpeg" alt="" height="200px" width="200px" id="myimg">
+
+  <h1 id="head1">Hello World</h1>
+
+  <div id="mydiv">
+    <input type="color" id="input1">
+
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum illo molestias quo beatae iste possimus
+      ipsa minima
+      cumque harum veniam ipsam nihil, saepe voluptate deserunt praesentium sunt quis atque omnis?
+    </p>
+  </div>
+
+  <button onclick="data()">data</button>
+
+</body>
+<script>
+  function data() {
+    
+
+    let head1 = document.createElement("h1")
+    let content = document.createTextNode("Welcome to our Home....")
+    head1.appendChild(content)
+
+
+    parent = document.getElementById("mydiv")
+    child = document.getElementById("para")
+
+    parent.replaceChild(head1,child)
+
+
+  }
+
+</script>
+
+</html>
